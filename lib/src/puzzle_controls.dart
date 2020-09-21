@@ -13,5 +13,7 @@ abstract class PuzzleControls implements Listenable {
 
   bool get autoPlay;
 
+  Duration get elapsedTime;
+
   void Function(bool newValue) get setAutoPlayFunction;
 }

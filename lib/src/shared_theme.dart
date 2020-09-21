@@ -103,7 +103,13 @@ abstract class SharedTheme {
             style: _infoStyle,
           ),
         ),
-        const Text(' Tiles left  ')
+        const Text(' Tiles left  '),
+        Text(
+          controls.elapsedTime.toString(),
+          textAlign: TextAlign.right,
+          style: _infoStyle,
+        ),
+        const Text(' Time')
       ];
 
   Widget tileButtonCore(int i, PuzzleProxy puzzle, bool small) {

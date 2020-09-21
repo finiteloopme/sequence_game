@@ -42,6 +42,9 @@ class _PuzzleControls extends ChangeNotifier implements PuzzleControls {
 
   @override
   void reset() => _parent.puzzle.reset();
+
+  @override
+  Duration get elapsedTime => _parent._lastElapsed;
 }
 
 class PuzzleHomeState extends State

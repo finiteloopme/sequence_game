@@ -14,8 +14,8 @@ void main() {
     await tester.pumpWidget(PuzzleApp());
 
     // Verify that our counter starts at 0.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('Clicks: 0'), findsOneWidget);
+    expect(find.text('0'), findsOneWidget);
+    expect(find.text('Clicks: 0'), findsNothing);
     expect(find.text('Tiles left: $tiles'), findsOneWidget);
 
     for (var i = 1; i < tiles; i++) {
